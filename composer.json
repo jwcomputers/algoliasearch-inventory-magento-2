@@ -1,12 +1,12 @@
 {
-  "name": "algolia/algoliasearch-inventory-magento-2",
+  "name": "jwc/algoliasearch-inventory-magento-2",
   "description": "Algolia Search Inventory module for Magento 2.3.x, 2.4.x and Algolia Search 3.* extension",
   "type": "magento2-module",
   "license": ["MIT"],
   "version": "1.0.4",
   "require": {
     "magento/module-inventory-api": "1.*",
-    "algolia/algoliasearch-magento-2": ">=1.12.0"  
+    "jwc/algoliasearch-magento-2": ">=1.12.0"  
   },
   "autoload": {
     "files": [ "registration.php" ],
