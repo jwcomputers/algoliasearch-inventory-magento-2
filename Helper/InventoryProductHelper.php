@@ -2,6 +2,7 @@
 
 namespace Algolia\AlgoliaSearchInventory\Helper;
 
+use Magento\Catalog\Model\ResourceModel\Product\Collection as ProductCollection;
 use Algolia\AlgoliaSearch\Helper\Entity\ProductHelper;
 use Magento\Catalog\Model\Product;
 
@@ -28,7 +29,7 @@ class InventoryProductHelper extends ProductHelper
         //void
     }
 
-    protected function addMandatoryAttributes($products)
+    protected function addMandatoryAttributes(ProductCollection $products): void
     {
         /** @var \Magento\Catalog\Model\ResourceModel\Product\Collection $products */
         $products->addAttributeToSelect('special_price')
