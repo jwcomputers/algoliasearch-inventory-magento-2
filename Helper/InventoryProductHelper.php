@@ -29,7 +29,7 @@ class InventoryProductHelper extends ProductHelper
         //void
     }
 
-    protected function addMandatoryAttributes(ProductCollection $products): void
+    protected function addMandatoryAttributes($products): void
     {
         /** @var \Magento\Catalog\Model\ResourceModel\Product\Collection $products */
         $products->addAttributeToSelect('special_price')
